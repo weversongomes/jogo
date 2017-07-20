@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://asd.jpg" type="Texture" id=1]
 [ext_resource path="res://mainmenu.gd" type="Script" id=2]
+[ext_resource path="res://img/web-buttons-azul.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
 
@@ -46,14 +47,16 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 412.0
-margin/top = 183.0
-margin/right = 576.0
-margin/bottom = 230.0
+margin/left = 404.0
+margin/top = 195.0
+margin/right = 578.0
+margin/bottom = 259.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Jogar"
-flat = false
+text = "Iniciar"
+icon = ExtResource( 3 )
+flat = true
+clip_text = true
 
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://asd.jpg" type="Texture" id=1]
 [ext_resource path="res://time-2020934_960_720.png" type="Texture" id=2]
 [ext_resource path="res://niveis.gd" type="Script" id=3]
+[ext_resource path="res://img/arrow-pequeno2.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -83,18 +84,20 @@ flat = false
 
 [node name="Voltar" type="Button" parent="Control"]
 
+hint/tooltip = "Voltar"
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 153.0
-margin/top = 392.0
-margin/right = 321.0
-margin/bottom = 439.0
+margin/left = 125.0
+margin/top = 499.0
+margin/right = 263.0
+margin/bottom = 561.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Voltar"
+text = "voltar"
+icon = ExtResource( 4 )
 flat = false
 
 
