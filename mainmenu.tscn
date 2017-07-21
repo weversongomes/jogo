@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=18 format=1]
 
 [ext_resource path="res://img/tela.png" type="Texture" id=1]
 [ext_resource path="res://img/sun-240.png" type="Texture" id=2]
@@ -13,6 +13,10 @@
 [ext_resource path="res://img/LOGO.png" type="Texture" id=11]
 [ext_resource path="res://img/number7-240.png" type="Texture" id=12]
 [ext_resource path="res://mainmenu.gd" type="Script" id=13]
+[ext_resource path="res://img/B-iniciar1.png" type="Texture" id=14]
+[ext_resource path="res://img/B-iniciar2.png" type="Texture" id=15]
+[ext_resource path="res://img/b-sair1.png" type="Texture" id=16]
+[ext_resource path="res://img/b-sair2.png" type="Texture" id=17]
 
 [node name="Node2D" type="Node2D"]
 
@@ -24,8 +28,8 @@ texture = ExtResource( 1 )
 
 [node name="Sol-e-Nuvens-em-png-queroiamgem-Ceiça-Crispim (2)" type="Sprite" parent="."]
 
-transform/pos = Vector2( 64.214, 53.7168 )
-transform/scale = Vector2( 0.680373, 0.517477 )
+transform/pos = Vector2( 64.214, 64.2328 )
+transform/scale = Vector2( 0.680373, 0.604387 )
 texture = ExtResource( 2 )
 
 [node name="cloud-47582_640" type="Sprite" parent="."]
@@ -102,39 +106,40 @@ margin/right = 655.0
 margin/bottom = 470.0
 script/script = ExtResource( 13 )
 
-[node name="Button" type="Button" parent="Control"]
+[node name="BotaoIniciar" type="TextureButton" parent="Control"]
 
-hint/tooltip = "Sair"
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 64.0
-margin/top = 135.0
-margin/right = 229.0
-margin/bottom = 183.0
+margin/left = 59.0
+margin/top = 69.0
+margin/right = 219.0
+margin/bottom = 128.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Sair"
-flat = false
+textures/normal = ExtResource( 14 )
+textures/hover = ExtResource( 15 )
+params/resize_mode = 0
+params/stretch_mode = 0
 
-[node name="Button 2" type="Button" parent="Control"]
+[node name="BotaoSair" type="TextureButton" parent="Control"]
 
-hint/tooltip = "Jogar"
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 63.0
-margin/top = 72.0
-margin/right = 229.0
-margin/bottom = 121.0
+margin/left = 61.0
+margin/top = 136.0
+margin/right = 221.0
+margin/bottom = 194.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Iniciar"
-flat = false
-clip_text = true
+textures/normal = ExtResource( 16 )
+textures/hover = ExtResource( 17 )
+params/resize_mode = 0
+params/stretch_mode = 0
 
 
