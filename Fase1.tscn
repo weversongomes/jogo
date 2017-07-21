@@ -1,54 +1,34 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://img/quadro.png" type="Texture" id=1]
 [ext_resource path="res://img/x64.png" type="Texture" id=2]
 [ext_resource path="res://img/check-64.png" type="Texture" id=3]
 [ext_resource path="res://img/cat-128.png" type="Texture" id=4]
-[ext_resource path="res://img/back-128.png" type="Texture" id=5]
-[ext_resource path="res://fases.gd" type="Script" id=6]
-[ext_resource path="res://img/two-128.png" type="Texture" id=7]
-[ext_resource path="res://ArrastarSprites.gd" type="Script" id=8]
+[ext_resource path="res://Movergatoteste.gd" type="Script" id=5]
+[ext_resource path="res://img/back-128.png" type="Texture" id=6]
+[ext_resource path="res://fases.gd" type="Script" id=7]
+[ext_resource path="res://gato.gd" type="Script" id=8]
+[ext_resource path="res://area.gd" type="Script" id=9]
+[ext_resource path="res://img/1-128.png" type="Texture" id=10]
+[ext_resource path="res://img/2-128.png" type="Texture" id=11]
+[ext_resource path="res://img/3-128.png" type="Texture" id=12]
+[ext_resource path="res://img/4-128.png" type="Texture" id=13]
+[ext_resource path="res://img/5-128.png" type="Texture" id=14]
+[ext_resource path="res://img/6-128.png" type="Texture" id=15]
+[ext_resource path="res://img/7-128.png" type="Texture" id=16]
+[ext_resource path="res://img/8-128.png" type="Texture" id=17]
+[ext_resource path="res://img/9-128.png" type="Texture" id=18]
 
-[sub_resource type="GDScript" id=1]
+[sub_resource type="CircleShape2D" id=1]
 
-script/source = "extends TextureFrame
-
-var mouse_enter = false
-var object_dragged = false
-var pos = get_global_mouse_pos()
-var posInicial = self.get_pos()
-
-func _ready():
-	self.connect(\"mouse_enter\", self, \"_on_mouse_enter\")
-	self.connect(\"mouse_exit\", self, \"_on_mouse_exit\")
-	set_fixed_process(true)
-
-func _fixed_process(delta):
-    pos = get_global_mouse_pos()
-    if mouse_enter == true:
-        if Input.is_mouse_button_pressed(BUTTON_LEFT):
-            set_global_pos(pos)
-            object_dragged = true
-        else:
-            object_dragged = false
-
-func _on_mouse_enter():
-    mouse_enter = true
-
-func _on_mouse_exit():
-
-    if object_dragged == false:
-		
-        mouse_enter = false
-
-
-"
+custom_solver_bias = 0.0
+radius = 10.0
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Bg" type="Sprite" parent="."]
 
-transform/pos = Vector2( 515.116, 298.345 )
+transform/pos = Vector2( 514.841, 298.345 )
 transform/scale = Vector2( 1.60232, 2.43848 )
 texture = ExtResource( 1 )
 
@@ -119,6 +99,7 @@ texture = ExtResource( 4 )
 transform/pos = Vector2( 284.08, 222.384 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 texture = ExtResource( 4 )
+script/script = ExtResource( 5 )
 
 [node name="Gato4" type="Sprite" parent="."]
 
@@ -169,10 +150,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 196.0
-margin/top = 204.0
-margin/right = 206.0
-margin/bottom = 218.0
+margin/left = 199.0
+margin/top = 203.0
+margin/right = 208.0
+margin/bottom = 217.0
 text = "+"
 percent_visible = 1.0
 lines_skipped = 0
@@ -230,13 +211,13 @@ max_lines_visible = -1
 
 transform/pos = Vector2( 434.24, 222.97 )
 transform/scale = Vector2( 0.619825, 0.636452 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Questao2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 432.509, 362.362 )
 transform/scale = Vector2( 0.619825, 0.636452 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Label 2" type="Label" parent="."]
 
@@ -267,7 +248,7 @@ margin/left = 30.0
 margin/top = 510.0
 margin/right = 107.0
 margin/bottom = 573.0
-script/script = ExtResource( 6 )
+script/script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="Control"]
 
@@ -285,122 +266,266 @@ shortcut = null
 text = "Voltar"
 flat = false
 
-[node name="Resposta1" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 577.0
-margin/top = 423.0
-margin/right = 725.0
-margin/bottom = 551.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = SubResource( 1 )
-
-[node name="Resposta2" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 667.0
-margin/top = 423.0
-margin/right = 815.0
-margin/bottom = 551.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
-[node name="Resposta3" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 767.0
-margin/top = 423.0
-margin/right = 915.0
-margin/bottom = 551.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
-[node name="Resposta4" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 877.0
-margin/top = 423.0
-margin/right = 1025.0
-margin/bottom = 551.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
-[node name="Resposta5" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 877.0
-margin/top = 323.0
-margin/right = 1025.0
-margin/bottom = 451.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
-[node name="Resposta6" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 777.0
-margin/top = 323.0
-margin/right = 925.0
-margin/bottom = 451.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
-[node name="Resposta7" type="TextureFrame" parent="."]
-
-rect/scale = Vector2( 0.5, 0.5 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 677.0
-margin/top = 323.0
-margin/right = 825.0
-margin/bottom = 451.0
-texture = ExtResource( 7 )
-expand = true
-stretch_mode = 0
-script/script = ExtResource( 8 )
-
 [node name="Gato1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 107.595, 222.384 )
+transform/pos = Vector2( 108.989, 222.673 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 texture = ExtResource( 4 )
+script/script = ExtResource( 8 )
+
+[node name="Resposta1" type="Area2D" parent="."]
+
+transform/pos = Vector2( 738.724, 423.511 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta1"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta1"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 10 )
+
+[node name="Resposta2" type="Area2D" parent="."]
+
+transform/pos = Vector2( 920.724, 243.41 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta2"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta2"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 11 )
+
+[node name="Resposta3" type="Area2D" parent="."]
+
+transform/pos = Vector2( 920.724, 333.41 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta3"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta3"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 12 )
+
+[node name="Resposta4" type="Area2D" parent="."]
+
+transform/pos = Vector2( 920.724, 423.41 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta4"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta4"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 13 )
+
+[node name="Resposta5" type="Area2D" parent="."]
+
+transform/pos = Vector2( 830.724, 423.41 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta5"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta5"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 14 )
+
+[node name="Resposta6" type="Area2D" parent="."]
+
+transform/pos = Vector2( 829.699, 245.012 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta6"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta6"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 15 )
+
+[node name="Resposta7" type="Area2D" parent="."]
+
+transform/pos = Vector2( 736.399, 332.14 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta7"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta7"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 16 )
+
+[node name="Resposta8" type="Area2D" parent="."]
+
+transform/pos = Vector2( 828.663, 334.536 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
+shapes/0/trigger = true
+space_override = 1
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta8"]
+
+transform/pos = Vector2( -1.28735, 0.731415 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = true
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta8"]
+
+visibility/behind_parent = true
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 17 )
+
+[node name="Resposta9" type="Area2D" parent="."]
+
+transform/pos = Vector2( 734.348, 245.012 )
+transform/scale = Vector2( 1.35938, 1.36719 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.18927, -0.170395 )
+shapes/0/trigger = false
+space_override = 1
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 9 )
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="Resposta9"]
+
+transform/pos = Vector2( -1.18927, -0.170395 )
+transform/scale = Vector2( 2.58886, 2.71472 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="Resposta9"]
+
+transform/pos = Vector2( -0.581482, 0.365723 )
+transform/scale = Vector2( 0.408046, 0.42 )
+texture = ExtResource( 18 )
 
 

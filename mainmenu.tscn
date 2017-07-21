@@ -1,16 +1,94 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=14 format=1]
 
-[ext_resource path="res://asd.jpg" type="Texture" id=1]
-[ext_resource path="res://mainmenu.gd" type="Script" id=2]
-[ext_resource path="res://img/web-buttons-azul.png" type="Texture" id=3]
+[ext_resource path="res://img/tela.png" type="Texture" id=1]
+[ext_resource path="res://img/sun-240.png" type="Texture" id=2]
+[ext_resource path="res://img/cloud-47582_640.png" type="Texture" id=3]
+[ext_resource path="res://img/eight64.png" type="Texture" id=4]
+[ext_resource path="res://img/five-64.png" type="Texture" id=5]
+[ext_resource path="res://img/glossy-129383564.png" type="Texture" id=6]
+[ext_resource path="res://img/glossy-129383864.png" type="Texture" id=7]
+[ext_resource path="res://img/brown-240.png" type="Texture" id=8]
+[ext_resource path="res://img/numbe4-204.png" type="Texture" id=9]
+[ext_resource path="res://img/glossy-0-240.png" type="Texture" id=10]
+[ext_resource path="res://img/LOGO.png" type="Texture" id=11]
+[ext_resource path="res://img/number7-240.png" type="Texture" id=12]
+[ext_resource path="res://mainmenu.gd" type="Script" id=13]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Bg" type="Sprite" parent="."]
 
-transform/pos = Vector2( 513.71, 303.293 )
-transform/scale = Vector2( 0.80411, 0.845698 )
+transform/pos = Vector2( 512.123, 301.247 )
+transform/scale = Vector2( 1.62989, 1.49158 )
 texture = ExtResource( 1 )
+
+[node name="Sol-e-Nuvens-em-png-queroiamgem-Ceiça-Crispim (2)" type="Sprite" parent="."]
+
+transform/pos = Vector2( 64.214, 53.7168 )
+transform/scale = Vector2( 0.680373, 0.517477 )
+texture = ExtResource( 2 )
+
+[node name="cloud-47582_640" type="Sprite" parent="."]
+
+transform/pos = Vector2( 807.815, 51.8303 )
+transform/scale = Vector2( 0.333712, 0.293105 )
+texture = ExtResource( 3 )
+
+[node name="cloud-47582_641" type="Sprite" parent="."]
+
+transform/pos = Vector2( 232.005, 64.1077 )
+transform/scale = Vector2( 0.333712, 0.293105 )
+texture = ExtResource( 3 )
+
+[node name="eight64" type="Sprite" parent="."]
+
+transform/pos = Vector2( 86.4191, 446.083 )
+texture = ExtResource( 4 )
+
+[node name="five-64" type="Sprite" parent="."]
+
+transform/pos = Vector2( 199.564, 318.225 )
+texture = ExtResource( 5 )
+
+[node name="glossy-129383564" type="Sprite" parent="."]
+
+transform/pos = Vector2( 796.326, 332.609 )
+texture = ExtResource( 6 )
+
+[node name="glossy-129383864" type="Sprite" parent="."]
+
+transform/pos = Vector2( 509.863, 531.652 )
+texture = ExtResource( 7 )
+
+[node name="brown-240" type="Sprite" parent="."]
+
+transform/pos = Vector2( 294.48, 486.342 )
+transform/scale = Vector2( 0.474118, 0.473219 )
+texture = ExtResource( 8 )
+
+[node name="numbe4-204" type="Sprite" parent="."]
+
+transform/pos = Vector2( 924.258, 458.469 )
+transform/scale = Vector2( 0.397272, 0.431811 )
+texture = ExtResource( 9 )
+
+[node name="glossy-0-240" type="Sprite" parent="."]
+
+transform/pos = Vector2( 415.106, 334.458 )
+transform/scale = Vector2( 0.397272, 0.431811 )
+texture = ExtResource( 10 )
+
+[node name="LOGO" type="Sprite" parent="."]
+
+transform/pos = Vector2( 500.015, 222.821 )
+transform/scale = Vector2( 1.34283, 1.05007 )
+texture = ExtResource( 11 )
+
+[node name="number7-240" type="Sprite" parent="."]
+
+transform/pos = Vector2( 681.235, 481.969 )
+transform/scale = Vector2( 0.39363, 0.425171 )
+texture = ExtResource( 12 )
 
 [node name="Control" type="Control" parent="."]
 
@@ -18,22 +96,23 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 6.0
-margin/top = 5.0
-margin/right = 1033.0
-margin/bottom = 599.0
-script/script = ExtResource( 2 )
+margin/left = 364.0
+margin/top = 239.0
+margin/right = 655.0
+margin/bottom = 470.0
+script/script = ExtResource( 13 )
 
 [node name="Button" type="Button" parent="Control"]
 
+hint/tooltip = "Sair"
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 412.0
-margin/top = 279.0
-margin/right = 577.0
-margin/bottom = 327.0
+margin/left = 64.0
+margin/top = 135.0
+margin/right = 229.0
+margin/bottom = 183.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -47,16 +126,15 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 404.0
-margin/top = 195.0
-margin/right = 578.0
-margin/bottom = 259.0
+margin/left = 63.0
+margin/top = 72.0
+margin/right = 229.0
+margin/bottom = 121.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Iniciar"
-icon = ExtResource( 3 )
-flat = true
+flat = false
 clip_text = true
 
 
