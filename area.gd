@@ -16,7 +16,7 @@ func _fixed_process(delta):
     if mouse_enter == true:
         
         if Input.is_mouse_button_pressed(BUTTON_LEFT):
-            set_global_pos(pos)
+            set_global_pos(Vector2(435,225))
             object_dragged = true
 
         else:
