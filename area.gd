@@ -1,5 +1,5 @@
 extends Area2D
-#scrip sendo usadp
+#scrip sendo usado
 
 var mouse_enter = false
 var object_dragged = false
@@ -52,12 +52,18 @@ func _on_mouse_release():
                 set_global_pos(questao.get_global_pos())                
                 erro.hide()
                 var vitoria = get_node("/root/Fase1/PopupAcerto")                     
-                vitoria.show()              
+                vitoria.show()
                 object_dragged = true
-            else:                 
+                if fase1.get("life")==1:
+                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("1")
+                elif fase1.get("life")==2:
+                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("2")
+                elif fase1.get("life")==3:
+                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("3")
+            else:
                 #print(erro.get_global_pos())
                  erro.set_global_pos(get_global_pos())
-                 erro.show()                 
+                 erro.show()
                  fase1.set("life",fase1.get("life")-1)
                  print("vida restante",fase1.get("life"))
                  if fase1.get("life")==2:
