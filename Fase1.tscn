@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=1]
+[gd_scene load_steps=42 format=1]
 
 [ext_resource path="res://Fase1.gd" type="Script" id=1]
 [ext_resource path="res://img/quadro.png" type="Texture" id=2]
@@ -33,9 +33,10 @@
 [ext_resource path="res://img/Menu2.png" type="Texture" id=31]
 [ext_resource path="res://img/px1.png" type="Texture" id=32]
 [ext_resource path="res://img/px2.png" type="Texture" id=33]
-[ext_resource path="res://audio/1.wav" type="Sample" id=34]
-[ext_resource path="res://audio/2.wav" type="Sample" id=35]
-[ext_resource path="res://audio/3.wav" type="Sample" id=36]
+[ext_resource path="res://audio/happy-again.ogg" type="AudioStream" id=34]
+[ext_resource path="res://audio/1.wav" type="Sample" id=35]
+[ext_resource path="res://audio/2.wav" type="Sample" id=36]
+[ext_resource path="res://audio/3.wav" type="Sample" id=37]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -60,19 +61,19 @@ samples/1 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 34 )
+"sample": ExtResource( 35 )
 }
 samples/2 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 35 )
+"sample": ExtResource( 36 )
 }
 samples/3 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 36 )
+"sample": ExtResource( 37 )
 }
 
 [node name="Fase1" type="Node2D"]
@@ -110,7 +111,6 @@ transform/pos = Vector2( 366.968, 157.548 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -119,6 +119,7 @@ transform/pos = Vector2( 438.968, 157.548 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
@@ -127,6 +128,7 @@ transform/pos = Vector2( 509.968, 157.548 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="Label 3" type="Label" parent="."]
@@ -727,6 +729,17 @@ textures/normal = ExtResource( 32 )
 textures/hover = ExtResource( 33 )
 params/resize_mode = 0
 params/stretch_mode = 0
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 34 )
+stream/play = false
+stream/loop = true
+stream/volume_db = 0.0
+stream/autoplay = true
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 [node name="SamplePlayer" type="SamplePlayer" parent="."]
 
