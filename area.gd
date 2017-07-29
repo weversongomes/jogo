@@ -67,9 +67,11 @@ func _on_mouse_release():
                  fase1.set("life",fase1.get("life")-1)
                  print("vida restante",fase1.get("life"))
                  if fase1.get("life")==2:
+                    get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("wrong")
                     var err1 = get_node("/root/Fase1/Vida1/Xvida1")
                     err1.show()
                  if fase1.get("life")==1:
+                    get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("wrong")
                     var err2 = get_node("/root/Fase1/Vida2/Xvida2")
                     err2.show()
                  if fase1.get("life")==0:
