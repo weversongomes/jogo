@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=1]
+[gd_scene load_steps=43 format=1]
 
 [ext_resource path="res://Fase1.gd" type="Script" id=1]
 [ext_resource path="res://img/quadro.png" type="Texture" id=2]
@@ -37,6 +37,7 @@
 [ext_resource path="res://audio/1.wav" type="Sample" id=35]
 [ext_resource path="res://audio/2.wav" type="Sample" id=36]
 [ext_resource path="res://audio/3.wav" type="Sample" id=37]
+[ext_resource path="res://audio/loose-sound.wav" type="Sample" id=38]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -74,6 +75,12 @@ samples/3 = {
 "pitch": 1.0,
 "priority": 0,
 "sample": ExtResource( 37 )
+}
+samples/loose-sound = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 38 )
 }
 
 [node name="Fase1" type="Node2D"]

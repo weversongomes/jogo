@@ -76,6 +76,7 @@ func _on_mouse_release():
                      var err2 = get_node("/root/Fase1/Vida3/Xvida3")
                      err2.show()
                      var derrota = get_node("/root/Fase1/PopupErro")
+                     get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("loose-sound")
                      
                      derrota.show()
                  #set_global_pos(Vector2(435,225))
