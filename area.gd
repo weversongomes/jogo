@@ -9,9 +9,9 @@ var pos = get_global_mouse_pos()
 var posInicial = self.get_pos()
 
 
-onready var erro = get_node("/root/Fase1/Erro")
-onready var questao = get_node("/root/Fase1/Questao1")
-onready var fase1= get_node("/root/Fase1")
+onready var erro = get_node("/root/Fase2/Erro")
+onready var questao = get_node("/root/Fase2/Questao1")
+onready var fase2= get_node("/root/Fase2")
 
 func _ready():
     self.connect("mouse_enter", self, "_on_mouse_enter")
@@ -48,37 +48,36 @@ func _on_mouse_release():
            # print("liberou")
             mouse_release=false
             
-            if self.get_name()=="Resposta3":
+            if self.get_name()=="Resposta5":
                 set_global_pos(questao.get_global_pos())                
                 erro.hide()
-                var vitoria = get_node("/root/Fase1/PopupAcerto")                     
+                var vitoria = get_node("/root/Fase2/PopupAcerto")                     
                 vitoria.show()
                 object_dragged = true
-                if fase1.get("life")==1:
-                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("1")
-                elif fase1.get("life")==2:
-                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("2")
-                elif fase1.get("life")==3:
-                	get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("3")
+                if fase2.get("life")==1:
+                	get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("1")
+                elif fase2.get("life")==2:
+                	get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("2")
+                elif fase2.get("life")==3:
+                	get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("3")
             else:
-                #print(erro.get_global_pos())
                  erro.set_global_pos(get_global_pos())
                  erro.show()
-                 fase1.set("life",fase1.get("life")-1)
-                 print("vida restante",fase1.get("life"))
-                 if fase1.get("life")==2:
-                    get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("wrong")
-                    var err1 = get_node("/root/Fase1/Vida1/Xvida1")
+                 fase2.set("life",fase2.get("life")-1)
+                 print("vida restante",fase2.get("life"))
+                 if fase2.get("life")==2:
+                    get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("wrong")
+                    var err1 = get_node("/root/Fase2/Vida1/Xvida1")
                     err1.show()
-                 if fase1.get("life")==1:
-                    get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("wrong")
-                    var err2 = get_node("/root/Fase1/Vida2/Xvida2")
+                 if fase2.get("life")==1:
+                    get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("wrong")
+                    var err2 = get_node("/root/Fase2/Vida2/Xvida2")
                     err2.show()
-                 if fase1.get("life")==0:
-                     var err2 = get_node("/root/Fase1/Vida3/Xvida3")
+                 if fase2.get("life")==0:
+                     var err2 = get_node("/root/Fase2/Vida3/Xvida3")
                      err2.show()
-                     var derrota = get_node("/root/Fase1/PopupErro")
-                     get_tree().get_root().get_node("Fase1").get_node("SamplePlayer").play("loose-sound")
+                     var derrota = get_node("/root/Fase2/PopupErro")
+                     get_tree().get_root().get_node("Fase2").get_node("SamplePlayer").play("loose-sound")
                      
                      derrota.show()
                  #set_global_pos(Vector2(435,225))
