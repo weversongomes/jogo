@@ -66,16 +66,35 @@ func _on_mouse_release():
             if self.get_name()==answer:
                 set_global_pos(questao.get_global_pos())                
                 erro.hide()
-                var vitoria = get_node("/root/"+ get_tree().get_current_scene().get_name() +"/PopupAcerto")                     
-                vitoria.show()
-                object_dragged = true
-                if fase2.get("life")==1:
-                	get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("1")
-                elif fase2.get("life")==2:
-                	get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("2")
-                elif fase2.get("life")==3:
-                	get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("3")
-            else:
+                if get_tree().get_current_scene().get_name() == "Fase5":
+                	if fase2.get("jogadaAtual")>0:
+                		fase2.set("timer",fase2.get("timerWait"))
+                		fase2.set("jogadaAtual",fase2.get("jogadaAtual")-1)
+                		get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("1")
+                		fase2.set("status",2)
+                		
+                	else:
+                			var vitoria = get_node("/root/"+ get_tree().get_current_scene().get_name() +"/PopupAcerto")                     
+                			vitoria.show()
+                			fase2.set("status",3)
+                			object_dragged = true
+                			if fase2.get("life")==1:
+                				get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("1")
+                			elif fase2.get("life")==2:
+                				get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("2")
+                			elif fase2.get("life")==3:
+                				get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("3")
+                else:#else da fase 5
+                	var vitoria = get_node("/root/"+ get_tree().get_current_scene().get_name() +"/PopupAcerto")                     
+                	vitoria.show()
+                	object_dragged = true
+                	if fase2.get("life")==1:
+                		get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("1")
+                	elif fase2.get("life")==2:
+                		get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("2")
+                	elif fase2.get("life")==3:
+                		get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("3")
+            else:#else das fases gerais do erro
                  erro.set_global_pos(get_global_pos())
                  erro.show()
                  fase2.set("life",fase2.get("life")-1)
@@ -94,7 +113,8 @@ func _on_mouse_release():
                      err2.show()
                      var derrota = get_node("/root/"+ get_tree().get_current_scene().get_name() +"/PopupErro")
                      get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("loose-sound")
-                     
+                     if get_tree().get_current_scene().get_name() == "Fase5":
+                     	fase2.set("status",3)
                      derrota.show()
                  #set_global_pos(Vector2(435,225))
                  object_dragged = true

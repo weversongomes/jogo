@@ -3,10 +3,21 @@ extends Node2D
 var life = 3
 var timerInicial=10
 var timer=timerInicial
-var maxJogadas=5
+var timerWait = 1
+var maxJogadas=10
 var jogadaAtual=maxJogadas
+var status=0; #status do time 0=incial 1=normal 2=estado de espera
 var respostaAtual="Resposta11"
 
+onready var resp1
+onready var resp2
+onready var resp3
+onready var resp4
+onready var resp5
+onready var resp6
+onready var resp7
+onready var resp8
+onready var resp9
 
 func _ready():
 	respostaAtual = randi()%9+1
@@ -47,3 +58,28 @@ func resposta():
 		return "Resposta8"
 	if respostaAtual==9:
 		return "Resposta9"
+func savarPosInicial():
+	#set_global_pos(questao.get_global_pos()) 
+	resp1= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta1").get_global_pos()
+	resp2= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta2").get_global_pos()
+	resp3= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta3").get_global_pos()
+	resp4= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta4").get_global_pos()
+	resp5= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta5").get_global_pos()
+	resp6= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta6").get_global_pos()
+	resp7= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta7").get_global_pos()
+	resp8= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta8").get_global_pos()
+	resp9= get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta9").get_global_pos()
+	
+func resetPos():
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta1").set_global_pos(resp1)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta2").set_global_pos(resp2)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta3").set_global_pos(resp3)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta4").set_global_pos(resp4)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta5").set_global_pos(resp5)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta6").set_global_pos(resp6)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta7").set_global_pos(resp7)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta8").set_global_pos(resp8)
+	get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Resposta9").set_global_pos(resp9)
+	
+
+	
