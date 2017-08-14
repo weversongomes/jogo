@@ -17,6 +17,7 @@ func _ready():
     self.connect("mouse_enter", self, "_on_mouse_enter")
     self.connect("mouse_exit", self, "_on_mouse_exit")
     
+    
     #print(questao.get_global_pos())
     set_fixed_process(true)
 
@@ -46,7 +47,7 @@ func _on_mouse_release():
             erro = get_node("/root/" + get_tree().get_current_scene().get_name() + "/Erro")
             questao = get_node("/root/" + get_tree().get_current_scene().get_name() + "/Questao1")
             fase2= get_node("/root/" + get_tree().get_current_scene().get_name())
-            print("AQUI")
+       
             print(get_tree().get_current_scene().get_name())
             mouse_release = true
             clic=0
@@ -58,6 +59,9 @@ func _on_mouse_release():
              answer = "Resposta3"
             elif get_tree().get_current_scene().get_name() == "Fase2":
              answer = "Resposta5"
+            elif get_tree().get_current_scene().get_name() == "Fase5":
+             answer = fase2.resposta()
+             #print(fase2.mostrarQtd(fase2.get("respostaAtual")))
 
             if self.get_name()==answer:
                 set_global_pos(questao.get_global_pos())                

@@ -3,6 +3,7 @@ extends Control
 func _ready():
 	get_node("Fase1").connect("pressed",self,"fase1")
 	get_node("Fase2").connect("pressed",self,"fase2")
+	get_node("Fase5").connect("pressed",self,"fase5")
 	get_node("Voltar").connect("pressed",self,"_on_Button_pressed")
 
 func _on_Button_pressed():
@@ -13,4 +14,7 @@ func fase1():
 
 func fase2():
 	get_node("/root/global").goto_scene("res://Fase2.tscn")
+
+func fase5():
+	get_node("/root/global").goto_scene("res://Fase5.tscn")
 	

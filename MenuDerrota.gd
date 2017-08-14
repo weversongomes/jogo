@@ -8,4 +8,5 @@ func _on_Button_pressed():
 	get_node("/root/global").goto_scene("res://niveis.tscn")
 
 func _jogar():
+
 	get_node("/root/global").goto_scene("res://"+get_tree().get_current_scene().get_name()+".tscn")
