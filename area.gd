@@ -61,15 +61,17 @@ func _on_mouse_release():
              answer = "Resposta5"
             elif get_tree().get_current_scene().get_name() == "Fase5":
              answer = fase2.resposta()
+            elif get_tree().get_current_scene().get_name() == "Fase6":
+             answer = fase2.resposta()
              #print(fase2.mostrarQtd(fase2.get("respostaAtual")))
 
             if self.get_name()==answer:
                 set_global_pos(questao.get_global_pos())                
                 erro.hide()
-                if get_tree().get_current_scene().get_name() == "Fase5":
+                if get_tree().get_current_scene().get_name() == "Fase5" || get_tree().get_current_scene().get_name() == "Fase6":
                 	if fase2.get("jogadaAtual")>0:
                 		fase2.set("timer",fase2.get("timerWait"))
-                		fase2.set("jogadaAtual",fase2.get("jogadaAtual")-1)
+                		
                 		get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("1")
                 		fase2.set("status",2)
                 		
@@ -113,7 +115,7 @@ func _on_mouse_release():
                      err2.show()
                      var derrota = get_node("/root/"+ get_tree().get_current_scene().get_name() +"/PopupErro")
                      get_tree().get_root().get_node(get_tree().get_current_scene().get_name()).get_node("SamplePlayer").play("loose-sound")
-                     if get_tree().get_current_scene().get_name() == "Fase5":
+                     if get_tree().get_current_scene().get_name() == "Fase5" ||get_tree().get_current_scene().get_name() == "Fase6":
                      	fase2.set("status",3)
                      derrota.show()
                  #set_global_pos(Vector2(435,225))

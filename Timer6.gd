@@ -3,10 +3,11 @@ extends Label
 var start=0;
 onready var fase2
 
+#set_global_pos(questao.get_global_pos())   
 
 
 func _ready():
-	get_node("/root/Fase5/Timer").connect("timeout",self,"_on_Timer_timeout")
+	get_node("/root/Fase6/Timer").connect("timeout",self,"_on_Timer_timeout")
 	
 
 func _on_Timer_timeout():

@@ -1,45 +1,46 @@
-[gd_scene load_steps=45 format=1]
+[gd_scene load_steps=46 format=1]
 
-[ext_resource path="res://Fase5.gd" type="Script" id=1]
+[ext_resource path="res://Fase6.gd" type="Script" id=1]
 [ext_resource path="res://img/quadro.png" type="Texture" id=2]
 [ext_resource path="res://img/cat-open-eyes-128.png" type="Texture" id=3]
 [ext_resource path="res://img/cat-closed-eyes-128.png" type="Texture" id=4]
-[ext_resource path="res://img/back-128.png" type="Texture" id=5]
-[ext_resource path="res://img/coracao.png" type="Texture" id=6]
-[ext_resource path="res://img/coracao4.png" type="Texture" id=7]
-[ext_resource path="res://fases.gd" type="Script" id=8]
-[ext_resource path="res://img/b-voltar2.png" type="Texture" id=9]
-[ext_resource path="res://img/b-voltar1.png" type="Texture" id=10]
-[ext_resource path="res://area.gd" type="Script" id=11]
-[ext_resource path="res://img/1-128.png" type="Texture" id=12]
-[ext_resource path="res://img/2-128.png" type="Texture" id=13]
-[ext_resource path="res://img/3-128.png" type="Texture" id=14]
-[ext_resource path="res://img/4-128.png" type="Texture" id=15]
-[ext_resource path="res://img/5-128.png" type="Texture" id=16]
-[ext_resource path="res://img/6-128.png" type="Texture" id=17]
-[ext_resource path="res://img/7-128.png" type="Texture" id=18]
-[ext_resource path="res://img/8-128.png" type="Texture" id=19]
-[ext_resource path="res://img/9-128.png" type="Texture" id=20]
-[ext_resource path="res://img/xx.png" type="Texture" id=21]
-[ext_resource path="res://MenuDerrota.gd" type="Script" id=22]
-[ext_resource path="res://img/bVoltar1.png" type="Texture" id=23]
-[ext_resource path="res://img/bVoltar2.png" type="Texture" id=24]
-[ext_resource path="res://img/bjogar1.png" type="Texture" id=25]
-[ext_resource path="res://img/bjogar2.png" type="Texture" id=26]
-[ext_resource path="res://img/Crying_Face_Emoji.png" type="Texture" id=27]
-[ext_resource path="res://img/graduation-124.png" type="Texture" id=28]
-[ext_resource path="res://MenuVitoria.gd" type="Script" id=29]
-[ext_resource path="res://img/Menu1.png" type="Texture" id=30]
-[ext_resource path="res://img/Menu2.png" type="Texture" id=31]
-[ext_resource path="res://img/px1.png" type="Texture" id=32]
-[ext_resource path="res://img/px2.png" type="Texture" id=33]
-[ext_resource path="res://audio/happy-again.ogg" type="AudioStream" id=34]
-[ext_resource path="res://audio/1.wav" type="Sample" id=35]
-[ext_resource path="res://audio/2.wav" type="Sample" id=36]
-[ext_resource path="res://audio/3.wav" type="Sample" id=37]
-[ext_resource path="res://audio/loose-sound.wav" type="Sample" id=38]
-[ext_resource path="res://audio/wrong.wav" type="Sample" id=39]
-[ext_resource path="res://Timer.gd" type="Script" id=40]
+[ext_resource path="res://img/dog-120.png" type="Texture" id=5]
+[ext_resource path="res://img/back-128.png" type="Texture" id=6]
+[ext_resource path="res://img/coracao.png" type="Texture" id=7]
+[ext_resource path="res://img/coracao4.png" type="Texture" id=8]
+[ext_resource path="res://fases.gd" type="Script" id=9]
+[ext_resource path="res://img/b-voltar2.png" type="Texture" id=10]
+[ext_resource path="res://img/b-voltar1.png" type="Texture" id=11]
+[ext_resource path="res://area.gd" type="Script" id=12]
+[ext_resource path="res://img/1-128.png" type="Texture" id=13]
+[ext_resource path="res://img/2-128.png" type="Texture" id=14]
+[ext_resource path="res://img/3-128.png" type="Texture" id=15]
+[ext_resource path="res://img/4-128.png" type="Texture" id=16]
+[ext_resource path="res://img/5-128.png" type="Texture" id=17]
+[ext_resource path="res://img/6-128.png" type="Texture" id=18]
+[ext_resource path="res://img/7-128.png" type="Texture" id=19]
+[ext_resource path="res://img/8-128.png" type="Texture" id=20]
+[ext_resource path="res://img/9-128.png" type="Texture" id=21]
+[ext_resource path="res://img/xx.png" type="Texture" id=22]
+[ext_resource path="res://MenuDerrota.gd" type="Script" id=23]
+[ext_resource path="res://img/bVoltar1.png" type="Texture" id=24]
+[ext_resource path="res://img/bVoltar2.png" type="Texture" id=25]
+[ext_resource path="res://img/bjogar1.png" type="Texture" id=26]
+[ext_resource path="res://img/bjogar2.png" type="Texture" id=27]
+[ext_resource path="res://img/Crying_Face_Emoji.png" type="Texture" id=28]
+[ext_resource path="res://img/graduation-124.png" type="Texture" id=29]
+[ext_resource path="res://MenuVitoria.gd" type="Script" id=30]
+[ext_resource path="res://img/Menu1.png" type="Texture" id=31]
+[ext_resource path="res://img/Menu2.png" type="Texture" id=32]
+[ext_resource path="res://img/px1.png" type="Texture" id=33]
+[ext_resource path="res://img/px2.png" type="Texture" id=34]
+[ext_resource path="res://audio/happy-again.ogg" type="AudioStream" id=35]
+[ext_resource path="res://audio/1.wav" type="Sample" id=36]
+[ext_resource path="res://audio/2.wav" type="Sample" id=37]
+[ext_resource path="res://audio/3.wav" type="Sample" id=38]
+[ext_resource path="res://audio/loose-sound.wav" type="Sample" id=39]
+[ext_resource path="res://audio/wrong.wav" type="Sample" id=40]
+[ext_resource path="res://Timer6.gd" type="Script" id=41]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -64,34 +65,34 @@ samples/1 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 35 )
+"sample": ExtResource( 36 )
 }
 samples/2 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 36 )
+"sample": ExtResource( 37 )
 }
 samples/3 = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 37 )
+"sample": ExtResource( 38 )
 }
 samples/loose-sound = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 38 )
+"sample": ExtResource( 39 )
 }
 samples/wrong = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 39 )
+"sample": ExtResource( 40 )
 }
 
-[node name="Fase5" type="Node2D"]
+[node name="Fase6" type="Node2D"]
 
 script/script = ExtResource( 1 )
 
@@ -112,7 +113,7 @@ margin/left = 40.0
 margin/top = 56.0
 margin/right = 107.0
 margin/bottom = 75.0
-text = "Fase 5"
+text = "Fase 6"
 align = 1
 valign = 1
 uppercase = true
@@ -127,6 +128,7 @@ transform/pos = Vector2( 507.266, 205.47 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="."]
@@ -136,7 +138,6 @@ transform/pos = Vector2( 435.953, 202.768 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="."]
@@ -146,7 +147,6 @@ transform/pos = Vector2( 362.446, 201.261 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
@@ -156,17 +156,15 @@ transform/pos = Vector2( 506.336, 156.636 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 434.583, 154.952 )
+transform/pos = Vector2( 434.892, 155.653 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
@@ -176,6 +174,7 @@ transform/pos = Vector2( 362.956, 153.46 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
@@ -185,6 +184,7 @@ transform/pos = Vector2( 507.859, 108.383 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -194,7 +194,6 @@ transform/pos = Vector2( 433.629, 108.124 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite1" type="AnimatedSprite" parent="."]
@@ -204,8 +203,70 @@ transform/pos = Vector2( 363.781, 107.227 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 432.81, 151.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 360.81, 151.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 502.81, 151.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 432.81, 103.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 362.81, 103.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 361.81, 198.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 432.81, 198.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 504.81, 198.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 504.81, 101.305 )
+transform/scale = Vector2( 0.451974, 0.522729 )
+texture = ExtResource( 5 )
 
 [node name="Label 3" type="Label" parent="."]
 
@@ -228,44 +289,44 @@ max_lines_visible = -1
 
 transform/pos = Vector2( 631.842, 151.57 )
 transform/scale = Vector2( 0.587391, 0.602401 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Vida1" type="Sprite" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 828.855, 76.1681 )
 transform/scale = Vector2( 0.277336, 0.25866 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Xvida1" type="Sprite" parent="Vida1"]
 
 visibility/visible = false
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Vida2" type="Sprite" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 867.855, 76.1681 )
 transform/scale = Vector2( 0.277336, 0.25866 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Xvida2" type="Sprite" parent="Vida2"]
 
 visibility/visible = false
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Vida3" type="Sprite" parent="."]
 
 editor/display_folded = true
 transform/pos = Vector2( 907.855, 76.1681 )
 transform/scale = Vector2( 0.277336, 0.25866 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 
 [node name="Xvida3" type="Sprite" parent="Vida3"]
 
 visibility/visible = false
 transform/pos = Vector2( -3.33643, 0 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 
 [node name="Score" type="Label" parent="."]
 
@@ -306,6 +367,7 @@ max_lines_visible = -1
 
 [node name="Control" type="Control" parent="."]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -314,7 +376,7 @@ margin/left = 30.0
 margin/top = 510.0
 margin/right = 107.0
 margin/bottom = 573.0
-script/script = ExtResource( 8 )
+script/script = ExtResource( 9 )
 
 [node name="Voltar" type="TextureButton" parent="Control"]
 
@@ -329,8 +391,8 @@ margin/bottom = 51.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 9 )
-textures/hover = ExtResource( 10 )
+textures/normal = ExtResource( 10 )
+textures/hover = ExtResource( 11 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -348,7 +410,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta1"]
 
@@ -362,7 +424,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="Resposta2" type="Area2D" parent="."]
 
@@ -378,7 +440,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta2"]
 
@@ -392,7 +454,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="Resposta3" type="Area2D" parent="."]
 
@@ -408,7 +470,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta3"]
 
@@ -422,7 +484,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="Resposta4" type="Area2D" parent="."]
 
@@ -438,7 +500,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta4"]
 
@@ -452,7 +514,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
 [node name="Resposta5" type="Area2D" parent="."]
 
@@ -468,7 +530,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta5"]
 
@@ -482,7 +544,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="Resposta6" type="Area2D" parent="."]
 
@@ -498,7 +560,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta6"]
 
@@ -512,7 +574,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
 [node name="Resposta7" type="Area2D" parent="."]
 
@@ -528,7 +590,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta7"]
 
@@ -542,7 +604,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [node name="Resposta8" type="Area2D" parent="."]
 
@@ -558,7 +620,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Resposta8"]
 
@@ -573,7 +635,7 @@ _update_shape_index = 0
 visibility/behind_parent = true
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 
 [node name="Resposta9" type="Area2D" parent="."]
 
@@ -589,7 +651,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 11 )
+script/script = ExtResource( 12 )
 
 [node name="CollisionShape2D1" type="CollisionShape2D" parent="Resposta9"]
 
@@ -603,7 +665,7 @@ _update_shape_index = 0
 
 transform/pos = Vector2( -0.581482, 0.365723 )
 transform/scale = Vector2( 0.408046, 0.42 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="Erro" type="Sprite" parent="."]
 
@@ -611,7 +673,7 @@ visibility/visible = false
 visibility/blend_mode = 4
 transform/pos = Vector2( 854.038, 503.216 )
 transform/scale = Vector2( 0.577409, 0.676372 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 
 [node name="PopupErro" type="PopupPanel" parent="."]
 
@@ -664,7 +726,7 @@ margin/left = 53.0
 margin/top = 182.0
 margin/right = 439.0
 margin/bottom = 283.0
-script/script = ExtResource( 22 )
+script/script = ExtResource( 23 )
 
 [node name="ErrVoltar" type="TextureButton" parent="PopupErro/Control"]
 
@@ -679,8 +741,8 @@ margin/bottom = 90.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 23 )
-textures/hover = ExtResource( 24 )
+textures/normal = ExtResource( 24 )
+textures/hover = ExtResource( 25 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -697,8 +759,8 @@ margin/bottom = 89.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 25 )
-textures/hover = ExtResource( 26 )
+textures/normal = ExtResource( 26 )
+textures/hover = ExtResource( 27 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -706,12 +768,11 @@ params/stretch_mode = 0
 
 transform/pos = Vector2( 121.672, 132.158 )
 transform/scale = Vector2( 0.123085, 0.116454 )
-texture = ExtResource( 27 )
+texture = ExtResource( 28 )
 
 [node name="PopupAcerto" type="PopupPanel" parent="."]
 
 process/pause_mode = 2
-editor/display_folded = true
 visibility/visible = false
 visibility/blend_mode = 1
 focus/ignore_mouse = false
@@ -754,7 +815,7 @@ max_lines_visible = -1
 transform/pos = Vector2( -117.005, -39.7407 )
 transform/rot = 20.0
 transform/scale = Vector2( 0.625991, 0.924956 )
-texture = ExtResource( 28 )
+texture = ExtResource( 29 )
 
 [node name="Control" type="Control" parent="PopupAcerto"]
 
@@ -767,7 +828,7 @@ margin/left = 98.0
 margin/top = 164.0
 margin/right = 484.0
 margin/bottom = 265.0
-script/script = ExtResource( 29 )
+script/script = ExtResource( 30 )
 
 [node name="VitVoltar" type="TextureButton" parent="PopupAcerto/Control"]
 
@@ -782,8 +843,8 @@ margin/bottom = 90.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 30 )
-textures/hover = ExtResource( 31 )
+textures/normal = ExtResource( 31 )
+textures/hover = ExtResource( 32 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -800,14 +861,14 @@ margin/bottom = 90.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 32 )
-textures/hover = ExtResource( 33 )
+textures/normal = ExtResource( 33 )
+textures/hover = ExtResource( 34 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
 [node name="StreamPlayer" type="StreamPlayer" parent="."]
 
-stream/stream = ExtResource( 34 )
+stream/stream = ExtResource( 35 )
 stream/play = false
 stream/loop = true
 stream/volume_db = 0.0
@@ -848,7 +909,7 @@ text = "Tempo:"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-script/script = ExtResource( 40 )
+script/script = ExtResource( 41 )
 
 [node name="Timer" type="Timer" parent="."]
 

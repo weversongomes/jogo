@@ -29,16 +29,28 @@ func _ready():
 
 func gerarNovaQtd():
 	respostaAtual = randi()%9+1
+	respostaAtual = randi()%9+1
 	mostrarQtd(respostaAtual)
 
 func mostrarQtd(n):
-	
+	var tipo=randi()%3+1
+	print("tipo ",tipo)
 	for i in range(1,10):
-		if i<=n:
-			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).show()
+		if tipo==1:
+			if i<=n:
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).show()
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
+			else:
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
 		else:
-			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-
+			if i<=n:
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).show()
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
+			else:
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
+				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
+				
 func resposta():
 	
 	if respostaAtual==1:
