@@ -1,8 +1,12 @@
 extends Node2D
 
 var life = 3
-var time=5
-var respostaAtual="Resposta1"
+var timerInicial=10
+var timer=timerInicial
+var maxJogadas=5
+var jogadaAtual=maxJogadas
+var respostaAtual="Resposta11"
+
 
 func _ready():
 	respostaAtual = randi()%9+1
@@ -14,6 +18,7 @@ func _ready():
 
 func gerarNovaQtd():
 	respostaAtual = randi()%9+1
+	mostrarQtd(respostaAtual)
 
 func mostrarQtd(n):
 	for i in range(1,10):
