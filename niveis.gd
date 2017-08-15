@@ -7,6 +7,8 @@ func _ready():
 	get_node("Fase4").connect("pressed",self,"fase4")
 	get_node("Fase5").connect("pressed",self,"fase5")
 	get_node("Fase6").connect("pressed",self,"fase6")
+	get_node("Fase7").connect("pressed",self,"fase7")
+	get_node("Fase8").connect("pressed",self,"fase8")
 	get_node("Fase9").connect("pressed",self,"fase9")
 	get_node("Fase10").connect("pressed",self,"fase10")
 	get_node("Fase11").connect("pressed",self,"fase11")
@@ -34,6 +36,12 @@ func fase5():
 
 func fase6():
 	get_node("/root/global").goto_scene("res://Fase6.tscn")
+
+func fase7():
+	get_node("/root/global").goto_scene("res://Fase7.tscn")
+
+func fase8():
+	get_node("/root/global").goto_scene("res://Fase8.tscn")
 
 func fase9():
 	get_node("/root/global").goto_scene("res://Fase9.tscn")

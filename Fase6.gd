@@ -8,7 +8,7 @@ var maxJogadas=10
 var jogadaAtual=maxJogadas
 var status=0; #status do time 0=incial 1=normal 2=estado de espera
 var fase=6
-var nextFase=0
+var nextFase=7
 var respostaAtual="Resposta11"
 
 onready var resp1

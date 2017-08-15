@@ -63,6 +63,10 @@ func _on_mouse_release():
              answer = "Resposta4"
             elif get_tree().get_current_scene().get_name() == "Fase4":
              answer = "Resposta5"
+            elif get_tree().get_current_scene().get_name() == "Fase7":
+             answer = "Resposta5"
+            elif get_tree().get_current_scene().get_name() == "Fase8":
+             answer = "Resposta7"
             elif get_tree().get_current_scene().get_name() == "Fase5":
              answer = fase2.resposta()
             elif get_tree().get_current_scene().get_name() == "Fase6":
