@@ -3,6 +3,8 @@ extends Control
 func _ready():
 	get_node("Fase1").connect("pressed",self,"fase1")
 	get_node("Fase2").connect("pressed",self,"fase2")
+	get_node("Fase3").connect("pressed",self,"fase3")
+	get_node("Fase4").connect("pressed",self,"fase4")
 	get_node("Fase5").connect("pressed",self,"fase5")
 	get_node("Fase6").connect("pressed",self,"fase6")
 	get_node("Fase9").connect("pressed",self,"fase9")
@@ -18,6 +20,12 @@ func fase1():
 
 func fase2():
 	get_node("/root/global").goto_scene("res://Fase2.tscn")
+
+func fase3():
+	get_node("/root/global").goto_scene("res://Fase3.tscn")
+
+func fase4():
+	get_node("/root/global").goto_scene("res://Fase4.tscn")
 
 func fase5():
 	get_node("/root/global").goto_scene("res://Fase5.tscn")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=44 format=1]
 
-[ext_resource path="res://Fase2.gd" type="Script" id=1]
+[ext_resource path="res://Fase3.gd" type="Script" id=1]
 [ext_resource path="res://img/quadro.png" type="Texture" id=2]
 [ext_resource path="res://img/cat-open-eyes-128.png" type="Texture" id=3]
 [ext_resource path="res://img/cat-closed-eyes-128.png" type="Texture" id=4]
@@ -90,7 +90,7 @@ samples/wrong = {
 "sample": ExtResource( 39 )
 }
 
-[node name="Fase2" type="Node2D"]
+[node name="Fase3" type="Node2D"]
 
 script/script = ExtResource( 1 )
 
@@ -111,7 +111,7 @@ margin/left = 40.0
 margin/top = 56.0
 margin/right = 107.0
 margin/bottom = 75.0
-text = "Fase 2"
+text = "Fase 3"
 align = 1
 valign = 1
 uppercase = true
@@ -121,13 +121,30 @@ max_lines_visible = -1
 
 [node name="AnimatedSprite1" type="AnimatedSprite" parent="."]
 
-transform/pos = Vector2( 438.968, 157.548 )
+transform/pos = Vector2( 438.968, 99.548 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 509.968, 99.548 )
+transform/scale = Vector2( 0.534296, 0.557914 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 438.968, 157.548 )
+transform/scale = Vector2( 0.534296, 0.557914 )
+frames = SubResource( 1 )
+animation = "default"
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
 
 transform/pos = Vector2( 509.968, 157.548 )
 transform/scale = Vector2( 0.534296, 0.557914 )
@@ -546,7 +563,6 @@ texture = ExtResource( 21 )
 [node name="PopupErro" type="PopupPanel" parent="."]
 
 process/pause_mode = 1
-editor/display_folded = true
 visibility/visible = false
 visibility/blend_mode = 1
 focus/ignore_mouse = false
@@ -641,7 +657,6 @@ texture = ExtResource( 27 )
 [node name="PopupAcerto" type="PopupPanel" parent="."]
 
 process/pause_mode = 2
-editor/display_folded = true
 visibility/visible = false
 visibility/blend_mode = 1
 focus/ignore_mouse = false
@@ -654,14 +669,14 @@ margin/right = 798.0
 margin/bottom = 529.0
 popup/exclusive = true
 
-[node name="Sprite" type="Sprite" parent="PopupAcerto"]
+[node name="Sprite 3" type="Sprite" parent="PopupAcerto"]
 
 editor/display_folded = true
 transform/pos = Vector2( 291.324, 161.283 )
 transform/scale = Vector2( 0.919669, 1.33737 )
 texture = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="PopupAcerto/Sprite"]
+[node name="Label" type="Label" parent="PopupAcerto/Sprite 3"]
 
 rect/scale = Vector2( 3, 3 )
 focus/ignore_mouse = true
@@ -679,7 +694,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Sprite 2" type="Sprite" parent="PopupAcerto/Sprite"]
+[node name="Sprite 2" type="Sprite" parent="PopupAcerto/Sprite 3"]
 
 transform/pos = Vector2( -117.005, -39.7407 )
 transform/rot = 20.0

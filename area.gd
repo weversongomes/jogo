@@ -56,8 +56,12 @@ func _on_mouse_release():
 
             var answer
             if get_tree().get_current_scene().get_name() == "Fase1":
-             answer = "Resposta3"
+             answer = "Resposta1"
             elif get_tree().get_current_scene().get_name() == "Fase2":
+             answer = "Resposta2"
+            elif get_tree().get_current_scene().get_name() == "Fase3":
+             answer = "Resposta4"
+            elif get_tree().get_current_scene().get_name() == "Fase4":
              answer = "Resposta5"
             elif get_tree().get_current_scene().get_name() == "Fase5":
              answer = fase2.resposta()
