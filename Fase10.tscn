@@ -1,6 +1,6 @@
 [gd_scene load_steps=46 format=1]
 
-[ext_resource path="res://Fase9.gd" type="Script" id=1]
+[ext_resource path="res://Fase10.gd" type="Script" id=1]
 [ext_resource path="res://img/quadro.png" type="Texture" id=2]
 [ext_resource path="res://img/cat-open-eyes-128.png" type="Texture" id=3]
 [ext_resource path="res://img/cat-closed-eyes-128.png" type="Texture" id=4]
@@ -40,7 +40,7 @@
 [ext_resource path="res://audio/3.wav" type="Sample" id=38]
 [ext_resource path="res://audio/loose-sound.wav" type="Sample" id=39]
 [ext_resource path="res://audio/wrong.wav" type="Sample" id=40]
-[ext_resource path="res://Timer9.gd" type="Script" id=41]
+[ext_resource path="res://Timer10.gd" type="Script" id=41]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -92,7 +92,7 @@ samples/wrong = {
 "sample": ExtResource( 40 )
 }
 
-[node name="Fase9" type="Node2D"]
+[node name="Fase10" type="Node2D"]
 
 script/script = ExtResource( 1 )
 
@@ -113,7 +113,7 @@ margin/left = 40.0
 margin/top = 56.0
 margin/right = 107.0
 margin/bottom = 75.0
-text = "Fase 6"
+text = "Fase 10"
 align = 1
 valign = 1
 uppercase = true
@@ -227,63 +227,63 @@ playing = true
 [node name="Sprite1" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 432.81, 151.305 )
+transform/pos = Vector2( 326.81, 167.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 360.81, 151.305 )
+transform/pos = Vector2( 327.81, 113.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 502.81, 151.305 )
+transform/pos = Vector2( 261.81, 114.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 432.81, 103.305 )
+transform/pos = Vector2( 260.81, 167.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite5" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 362.81, 103.305 )
+transform/pos = Vector2( 382.81, 142.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite6" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 361.81, 198.305 )
+transform/pos = Vector2( 477.81, 112.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite7" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 432.81, 198.305 )
+transform/pos = Vector2( 476.81, 172.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite8" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 504.81, 198.305 )
+transform/pos = Vector2( 537.81, 115.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
 [node name="Sprite9" type="Sprite" parent="."]
 
 visibility/visible = false
-transform/pos = Vector2( 504.81, 101.305 )
+transform/pos = Vector2( 538.81, 171.305 )
 transform/scale = Vector2( 0.451974, 0.522729 )
 texture = ExtResource( 5 )
 
