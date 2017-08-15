@@ -28,47 +28,23 @@ func _ready():
 
 
 func gerarNovaQtd():
-	var a = randonNumeros(5)
-	var b = randonNumeros(4)
+	var a = randonNumeros(8)
+	var b = randonNumeros(9-a)
 	respostaAtual = a+b
 	mostrarQtd(a,b)
 
 func mostrarQtd(a,b):
-	for i in range(1,6):
-		var tipo=randi()%2+1
-		if tipo==1:
-			if i<=a:#lado a
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).show()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
-			else:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
+	for i in range(1,10):
+		if i==a:#lado a
+			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/SpriteA"+str(i)).show()
 		else:
-			if i<=a:#lado a
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).show()
-			else:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
-	
-	for i in range(6,10):
-					#labo b
-		var tipo=randi()%2+1
-		if tipo==1:
-			if i<=b+5:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).show()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
-			else:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
+			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/SpriteA"+str(i)).hide()
+
+	for i in range(1,10):
+		if i==b:#lado b
+			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/SpriteB"+str(i)).show()
 		else:
-			if i<=b+5:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).show()
-			else:
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/AnimatedSprite"+str(i)).hide()
-				get_node("/root/"+ get_tree().get_current_scene().get_name() +"/Sprite"+str(i)).hide()
-			
+			get_node("/root/"+ get_tree().get_current_scene().get_name() +"/SpriteB"+str(i)).hide()
 
 func resposta():
 	

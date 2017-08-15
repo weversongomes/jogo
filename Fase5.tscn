@@ -127,6 +127,7 @@ transform/pos = Vector2( 507.266, 205.47 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="."]
@@ -136,7 +137,6 @@ transform/pos = Vector2( 435.953, 202.768 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="."]
@@ -146,7 +146,6 @@ transform/pos = Vector2( 362.446, 201.261 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
@@ -156,7 +155,6 @@ transform/pos = Vector2( 506.336, 156.636 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
@@ -166,7 +164,6 @@ transform/pos = Vector2( 434.583, 154.952 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
@@ -176,6 +173,7 @@ transform/pos = Vector2( 362.956, 153.46 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
@@ -185,6 +183,7 @@ transform/pos = Vector2( 507.859, 108.383 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -194,7 +193,6 @@ transform/pos = Vector2( 433.629, 108.124 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite1" type="AnimatedSprite" parent="."]
@@ -204,7 +202,6 @@ transform/pos = Vector2( 363.781, 107.227 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="Label 3" type="Label" parent="."]
@@ -336,8 +333,7 @@ params/stretch_mode = 0
 
 [node name="Resposta1" type="Area2D" parent="."]
 
-editor/display_folded = true
-transform/pos = Vector2( 406.401, 481.959 )
+transform/pos = Vector2( 405.401, 304.959 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -367,7 +363,7 @@ texture = ExtResource( 12 )
 [node name="Resposta2" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 588.401, 301.858 )
+transform/pos = Vector2( 496.401, 302.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -397,7 +393,7 @@ texture = ExtResource( 13 )
 [node name="Resposta3" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 588.401, 391.858 )
+transform/pos = Vector2( 588.401, 304.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -427,7 +423,7 @@ texture = ExtResource( 14 )
 [node name="Resposta4" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 588.401, 481.858 )
+transform/pos = Vector2( 406.401, 390.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -457,7 +453,7 @@ texture = ExtResource( 15 )
 [node name="Resposta5" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 498.401, 481.858 )
+transform/pos = Vector2( 498.401, 392.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -487,7 +483,7 @@ texture = ExtResource( 16 )
 [node name="Resposta6" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 497.375, 303.46 )
+transform/pos = Vector2( 592.375, 393.46 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -517,7 +513,7 @@ texture = ExtResource( 17 )
 [node name="Resposta7" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 404.076, 390.588 )
+transform/pos = Vector2( 405.076, 479.588 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -547,7 +543,7 @@ texture = ExtResource( 18 )
 [node name="Resposta8" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 496.34, 392.984 )
+transform/pos = Vector2( 498.34, 480.984 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
@@ -578,7 +574,7 @@ texture = ExtResource( 19 )
 [node name="Resposta9" type="Area2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 402.025, 303.46 )
+transform/pos = Vector2( 592.025, 480.46 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
 shapes/0/shape = SubResource( 2 )
