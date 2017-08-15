@@ -20,7 +20,7 @@ func _on_Timer_timeout():
 	elif start==2:
 		#tempo de espera
 		
-		self.set_text("Tempo: "+str(fase2.get("timer")))
+		#self.set_text("Tempo: "+str(fase2.get("timer")))
 		fase2.set("timer",fase2.get("timer")-1)
 		
 		if fase2.get("timer")==-1:

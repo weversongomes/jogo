@@ -48,15 +48,15 @@
 [ext_resource path="res://img/oito-120.png" type="Texture" id=46]
 [ext_resource path="res://img/nove-120.png" type="Texture" id=47]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 10.0
 
-[sub_resource type="Theme" id=3]
+[sub_resource type="Theme" id=2]
 
 
-[sub_resource type="SampleLibrary" id=4]
+[sub_resource type="SampleLibrary" id=3]
 
 samples/1 = {
 "db": 0.0,
@@ -267,7 +267,7 @@ params/stretch_mode = 0
 transform/pos = Vector2( 406.401, 303.959 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -281,7 +281,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -297,7 +297,7 @@ editor/display_folded = true
 transform/pos = Vector2( 499.401, 302.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -311,7 +311,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -327,7 +327,7 @@ editor/display_folded = true
 transform/pos = Vector2( 588.401, 303.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -341,7 +341,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -357,7 +357,7 @@ editor/display_folded = true
 transform/pos = Vector2( 404.401, 391.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -371,7 +371,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -387,7 +387,7 @@ editor/display_folded = true
 transform/pos = Vector2( 498.401, 392.858 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -401,7 +401,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -417,7 +417,7 @@ editor/display_folded = true
 transform/pos = Vector2( 589.375, 392.46 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -431,7 +431,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -447,7 +447,7 @@ editor/display_folded = true
 transform/pos = Vector2( 404.076, 482.588 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.90167, 0.731415 )
 shapes/0/trigger = false
 space_override = 3
@@ -461,7 +461,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.90167, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -476,7 +476,7 @@ texture = ExtResource( 16 )
 transform/pos = Vector2( 497.34, 482.984 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.28735, 0.731415 )
 shapes/0/trigger = true
 space_override = 3
@@ -490,7 +490,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.28735, 0.731415 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = true
 _update_shape_index = 0
 
@@ -506,7 +506,7 @@ texture = ExtResource( 17 )
 transform/pos = Vector2( 590.025, 482.46 )
 transform/scale = Vector2( 1.35938, 1.36719 )
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.58886, 0, 0, 2.71472, -1.18927, -0.170395 )
 shapes/0/trigger = false
 space_override = 3
@@ -520,7 +520,7 @@ script/script = ExtResource( 9 )
 
 transform/pos = Vector2( -1.18927, -0.170395 )
 transform/scale = Vector2( 2.58886, 2.71472 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -567,7 +567,7 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-theme/theme = SubResource( 3 )
+theme/theme = SubResource( 2 )
 margin/left = 170.0
 margin/top = 108.0
 margin/right = 258.0
@@ -662,7 +662,7 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-theme/theme = SubResource( 3 )
+theme/theme = SubResource( 2 )
 margin/left = -44.0
 margin/top = -61.0
 margin/right = 28.0
@@ -743,7 +743,7 @@ stream/buffering_ms = 500
 [node name="SamplePlayer" type="SamplePlayer" parent="."]
 
 config/polyphony = 1
-config/samples = SubResource( 4 )
+config/samples = SubResource( 3 )
 default/volume_db = 0.0
 default/pitch_scale = 1.0
 default/pan = 0.0

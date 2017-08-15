@@ -10,6 +10,8 @@ func _ready():
 	get_node("Fase9").connect("pressed",self,"fase9")
 	get_node("Fase10").connect("pressed",self,"fase10")
 	get_node("Fase11").connect("pressed",self,"fase11")
+	get_node("Fase12").connect("pressed",self,"fase12")
+	
 	get_node("Voltar").connect("pressed",self,"_on_Button_pressed")
 
 func _on_Button_pressed():
@@ -41,5 +43,8 @@ func fase10():
 
 func fase11():
 	get_node("/root/global").goto_scene("res://Fase11.tscn")
+
+func fase12():
+	get_node("/root/global").goto_scene("res://Fase12.tscn")
 
 	
