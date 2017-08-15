@@ -9,4 +9,9 @@ func _on_Button_pressed():
 
 func _jogar():
 	#criar um metodo para subtituir essa string da tela atual para a da proxima fase tipo "fase"+[next]+".tscn"
-	get_node("/root/global").goto_scene("res://"+get_tree().get_current_scene().get_name()+".tscn")
+	var next =get_node("/root/" + get_tree().get_current_scene().get_name()).get("nextFase")
+	
+	if next==0:#0 indicar que n tem mais fases seguintes e volta pro menu
+		get_node("/root/global").goto_scene("res://niveis.tscn")
+	else:
+		get_node("/root/global").goto_scene("res://Fase"+str(next)+".tscn")

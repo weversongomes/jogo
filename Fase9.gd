@@ -7,6 +7,8 @@ var timerWait = 1
 var maxJogadas=10
 var jogadaAtual=maxJogadas
 var status=0; #status do time 0=incial 1=normal 2=estado de espera
+var fase=9
+var nextFase=10
 var respostaAtual="Resposta11"
 
 onready var resp1

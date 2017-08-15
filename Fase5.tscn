@@ -707,7 +707,6 @@ texture = ExtResource( 27 )
 [node name="PopupAcerto" type="PopupPanel" parent="."]
 
 process/pause_mode = 2
-editor/display_folded = true
 visibility/visible = false
 visibility/blend_mode = 1
 focus/ignore_mouse = false
