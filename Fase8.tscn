@@ -104,6 +104,7 @@ texture = ExtResource( 2 )
 
 [node name="Label 6" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -143,6 +144,7 @@ transform/pos = Vector2( 283.114, 126.24 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="Label 4" type="Label" parent="."]
@@ -173,6 +175,7 @@ transform/pos = Vector2( 348.272, 127.242 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
@@ -181,7 +184,6 @@ transform/pos = Vector2( 285.847, 177.07 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
@@ -190,25 +192,24 @@ transform/pos = Vector2( 347.8, 177.918 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 810.493, 379.657 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 908.32, 355.289 )
 transform/scale = Vector2( 0.534296, 0.557914 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 1
 playing = true
 
 [node name="Label 3" type="Label" parent="."]
@@ -838,12 +839,14 @@ default/chorus_send = 0.0
 
 [node name="Sprite 2" type="Sprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 721.74, 375.119 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 41 )
 
 [node name="Label 5" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -860,6 +863,7 @@ max_lines_visible = -1
 
 [node name="Sprite4" type="Sprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 905.686, 400.401 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 41 )

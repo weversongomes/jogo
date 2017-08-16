@@ -105,6 +105,7 @@ texture = ExtResource( 2 )
 
 [node name="Label 6" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -834,24 +835,28 @@ script/script = ExtResource( 41 )
 
 [node name="Sprite 2" type="Sprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 721.74, 375.119 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 42 )
 
 [node name="Sprite4 2" type="Sprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 906.534, 351.575 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 42 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 811.818, 373.739 )
+visibility/visible = false
+transform/pos = Vector2( 813.325, 373.739 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 42 )
 
 [node name="Label 5" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -868,6 +873,7 @@ max_lines_visible = -1
 
 [node name="Sprite4" type="Sprite" parent="."]
 
+visibility/visible = false
 transform/pos = Vector2( 910.199, 394.083 )
 transform/scale = Vector2( 0.482788, 0.625998 )
 texture = ExtResource( 42 )
